@@ -1,109 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <title>CSGuruTelugu</title>
 
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:#f5f7fb;
+font-family:Arial;
+background: linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
 }
 
 /* HEADER */
 
-header{
-background:linear-gradient(90deg,#0f2027,#203a43,#2c5364);
-color:white;
-padding:25px;
-text-align:center;
+.header{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px;
 }
 
-/* NAVIGATION */
-
-nav{
-background:#ff6600;
-padding:12px;
-text-align:center;
+.logo{
+width:90px;
+margin-right:20px;
+border-radius:10px;
 }
 
-nav a{
-color:white;
-margin:15px;
-font-size:18px;
-text-decoration:none;
+.title{
+font-size:55px;
 font-weight:bold;
+background: linear-gradient(90deg,#ffcc00,#ff0066);
+-webkit-background-clip:text;
+color:transparent;
 }
 
-nav a:hover{
-color:black;
-}
+/* YOUTUBE BUTTON */
 
-/* LIVE NEWS TICKER */
-
-.ticker{
-background:#111;
-color:white;
-padding:10px;
-font-size:16px;
-}
-
-/* MAIN SECTION */
-
-section{
-padding:40px;
+.youtube{
 text-align:center;
+margin-top:20px;
 }
 
-/* BUTTON */
-
-.btn{
-padding:12px 25px;
-background:#ff0000;
+.youtube a{
+background:red;
 color:white;
-border:none;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
+padding:15px 25px;
+text-decoration:none;
+font-size:20px;
+border-radius:8px;
 }
 
-.btn:hover{
+.youtube a:hover{
 background:#cc0000;
 }
 
-/* CARDS */
+/* JOB SECTION */
 
-.cards{
-display:flex;
-justify-content:center;
-gap:20px;
-margin-top:40px;
-flex-wrap:wrap;
-}
-
-.card{
+.jobs{
 background:white;
+color:black;
+margin:40px;
 padding:20px;
-width:250px;
-border-radius:8px;
-box-shadow:0px 4px 10px rgba(0,0,0,0.2);
-transition:0.3s;
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
 }
 
-.card:hover{
-transform:scale(1.05);
+.jobs h2{
+color:#2a5298;
+}
+
+/* SCROLLING JOB LIST */
+
+.job-list{
+height:200px;
+overflow:hidden;
+position:relative;
+}
+
+.job-list ul{
+position:absolute;
+animation:scroll 12s linear infinite;
+}
+
+.job-list li{
+margin:15px 0;
+font-size:18px;
+}
+
+.job-list a{
+text-decoration:none;
+color:#0066cc;
+font-weight:bold;
+}
+
+.job-list a:hover{
+color:red;
+}
+
+@keyframes scroll{
+0%{top:100%;}
+100%{top:-100%;}
 }
 
 /* FOOTER */
 
-footer{
-background:black;
-color:white;
+.footer{
 text-align:center;
-padding:15px;
+padding:20px;
 margin-top:40px;
+background:black;
 }
 
 </style>
@@ -112,90 +118,58 @@ margin-top:40px;
 
 <body>
 
-<header>
+<!-- HEADER -->
 
-<h1>CSGuruTelugu</h1>
-
-<p>Programming | Networking | Tech Updates in Telugu</p>
-
-</header>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="materials.html">Study Materials</a>
-<a href="tech.html">Tech Updates</a>
-<a href="blog.html">Blog</a>
-
-</nav>
-
-<!-- LIVE JOB UPDATE SCROLL -->
-
-<div class="ticker">
-
-<marquee>
-
-🔥 Latest Job Updates: TCS Hiring Freshers | Infosys Recruitment | Google Internship | Amazon Hiring Developers | Wipro Careers
-
-</marquee>
-
+<div class="header">
+<img src="LOGO.jpg" class="logo">
+<div class="title">CSGuruTelugu</div>
 </div>
 
-<section>
-
-<h2>Welcome to CSGuruTelugu</h2>
-
-<p>Learn Programming, Networking and Latest Technology in Telugu</p>
+<div class="youtube">
 
 <a href="https://www.youtube.com/@CSGuruTelugu" target="_blank">
-
-<button class="btn">Visit My YouTube Channel</button>
-
+▶ Visit My YouTube Channel
 </a>
 
-<h2 style="margin-top:40px;">Explore Content</h2>
+</div>
 
-<div class="cards">
+<!-- JOB UPDATES -->
 
-<div class="card">
+<div class="jobs">
 
-<h3>Study Materials</h3>
+<h2>🔥 Latest Job Updates India (Software + Govt)</h2>
 
-<p>Download notes, labs and PDFs</p>
+<div class="job-list">
+
+<ul>
+
+<li><a href="https://www.google.com/search?q=TCS+jobs+2026" target="_blank">TCS Hiring Freshers</a></li>
+
+<li><a href="https://www.google.com/search?q=Infosys+jobs+2026" target="_blank">Infosys Recruitment</a></li>
+
+<li><a href="https://www.google.com/search?q=Google+internship+2026" target="_blank">Google Internship</a></li>
+
+<li><a href="https://www.google.com/search?q=Amazon+developer+jobs" target="_blank">Amazon Hiring Developers</a></li>
+
+<li><a href="https://www.google.com/search?q=Wipro+careers+2026" target="_blank">Wipro Careers</a></li>
+
+<li><a href="https://www.google.com/search?q=government+jobs+india+2026" target="_blank">Latest Government Jobs India</a></li>
+
+<li><a href="https://www.google.com/search?q=software+jobs+for+freshers+india" target="_blank">Software Jobs For Freshers</a></li>
+
+</ul>
 
 </div>
 
-<div class="card">
-
-<h3>Tech Updates</h3>
-
-<p>Latest technology news everyday</p>
-
 </div>
 
-<div class="card">
+<!-- FOOTER -->
 
-<h3>Programming Tutorials</h3>
+<div class="footer">
 
-<p>Learn coding step by step</p>
-
-</div>
+© 2026 CSGuruTelugu | All Rights Reserved
 
 </div>
-
-<h2 style="margin-top:50px;">Latest Videos</h2>
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed?listType=user_uploads&list=CSGuruTelugu">
-</iframe>
-
-</section>
-
-<footer>
-
-<p>© 2026 CSGuruTelugu</p>
-
-</footer>
 
 </body>
 </html>
