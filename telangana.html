@@ -1,297 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <title>Telangana Student Portal | CSGuruTelugu</title>
 
 <style>
-
 body{
-font-family:Arial;
-margin:0;
-background:#f2f5ff;
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#f2f5ff;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* NAVBAR */
+/* DARK MODE */
+body.dark{
+  background:#121212;
+  color:white;
+}
 
 .navbar{
-background:#0d47a1;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-color:white;
+  background:#0d47a1;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
 }
 
 .navbar a{
-color:white;
-text-decoration:none;
-margin:0 10px;
-font-weight:bold;
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
 }
 
-.navbar a:hover{
-color:#ffd54f;
-}
+.navbar a:hover{color:#ffd54f;}
 
-/* HEADER */
+.dark-mode-btn{
+  cursor:pointer;
+  padding:5px 10px;
+  background:#ffd54f;
+  border:none;
+  border-radius:5px;
+  font-weight:bold;
+}
 
 header{
-text-align:center;
-padding:30px;
-background:linear-gradient(120deg,#1e88e5,#42a5f5);
-color:white;
+  text-align:center;
+  padding:30px;
+  background:linear-gradient(120deg,#1e88e5,#42a5f5);
+  color:white;
 }
 
-header h1{
-font-size:40px;
-}
-
-/* SEARCH */
+header h1{font-size:40px;}
 
 .search-box{
-text-align:center;
-margin:20px;
+  text-align:center;
+  margin:20px;
 }
 
 .search-box input{
-width:60%;
-padding:10px;
-font-size:16px;
+  width:60%;
+  padding:10px;
+  font-size:16px;
 }
 
-/* DASHBOARD */
-
 .dashboard{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
 }
 
 .card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.15);
-text-align:center;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15);
+  text-align:center;
+  transition:transform 0.3s;
 }
 
-.card h3{
-color:#0d47a1;
+.card:hover{
+  transform:scale(1.05);
 }
 
 .card a{
-text-decoration:none;
-color:#1565c0;
-font-weight:bold;
+  text-decoration:none;
+  color:#1565c0;
+  font-weight:bold;
 }
 
-/* SECTION */
+.card a:hover{color:#d32f2f;}
 
 .section{
-padding:30px;
+  padding:30px;
 }
 
-.section h2{
-color:#0d47a1;
-}
+.section h2{color:#0d47a1;}
 
-ul{
-line-height:2;
-}
-
-/* CHATBOT */
+ul{line-height:2;}
+a{color:#1565c0;text-decoration:none;font-weight:bold;}
+a:hover{color:#d32f2f;}
 
 #chatbot{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#0d47a1;
-color:white;
-padding:15px;
-border-radius:50%;
-cursor:pointer;
-font-size:20px;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#0d47a1;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  cursor:pointer;
+  font-size:20px;
 }
 
 #chatbox{
-display:none;
-position:fixed;
-bottom:80px;
-right:20px;
-width:300px;
-background:white;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
+  display:none;
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  width:300px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
 #chatbox-header{
-background:#0d47a1;
-color:white;
-padding:10px;
+  background:#0d47a1;
+  color:white;
+  padding:10px;
 }
 
 #chatbox-body{
-padding:10px;
-height:200px;
-overflow:auto;
+  padding:10px;
+  height:200px;
+  overflow:auto;
 }
 
 #chatbox input{
-width:100%;
-padding:8px;
-border:none;
-border-top:1px solid #ccc;
+  width:100%;
+  padding:8px;
+  border:none;
+  border-top:1px solid #ccc;
 }
-
-/* FOOTER */
 
 footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
+  background:#0d47a1;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:30px;
 }
 
+.counter{
+  text-align:center;
+  margin:20px;
+  font-weight:bold;
+}
 </style>
-
 </head>
 
 <body>
 
-<!-- NAVIGATION BAR -->
-
+<!-- NAVBAR -->
 <div class="navbar">
-
-<div><b>CSGuruTelugu</b></div>
-
-<div>
-<a href="index.html">Home</a>
-<a href="#">Tutorials</a>
-<a href="#">Materials</a>
-<a href="#">Telangana Portals</a>
-<a href="#">Contact</a>
-</div>
-
+  <div><b>CSGuruTelugu</b></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#">Tutorials</a>
+    <a href="#">Materials</a>
+    <a href="#">Telangana Portals</a>
+    <a href="#">Contact</a>
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark/Light</button>
+  </div>
 </div>
 
 <!-- HEADER -->
-
 <header>
-
-<h1>Telangana Student Dashboard</h1>
-<p>All Education, Exams, Jobs & Universities in one place</p>
-
+  <h1>Telangana Student Dashboard</h1>
+  <p>All Education, Exams, Jobs & Universities in one place</p>
 </header>
 
 <!-- SEARCH -->
-
 <div class="search-box">
-
-<input type="text" id="search" placeholder="Search portals like TSPSC, EAMCET, JNTU...">
-
+  <input type="text" id="search" placeholder="Search portals like TSPSC, EAMCET, JNTU...">
 </div>
 
 <!-- DASHBOARD -->
-
 <div class="dashboard">
-
-<div class="card">
-<h3>TSPSC Jobs</h3>
-<a href="https://tspsc.gov.in/" target="_blank">Open Portal</a>
+  <div class="card"><h3>TSPSC Jobs</h3><a href="https://tspsc.gov.in/" target="_blank">Open Portal</a></div>
+  <div class="card"><h3>TG EAPCET</h3><a href="https://eapcet.tgche.ac.in/" target="_blank">Open Portal</a></div>
+  <div class="card"><h3>TS Intermediate</h3><a href="https://bie.telangana.gov.in/" target="_blank">Open Portal</a></div>
+  <div class="card"><h3>Osmania University</h3><a href="https://www.osmania.ac.in/" target="_blank">Open Portal</a></div>
+  <div class="card"><h3>DOST Admissions</h3><a href="https://dost.cgg.gov.in/" target="_blank">Open Portal</a></div>
+  <div class="card"><h3>SSC Board</h3><a href="https://bse.telangana.gov.in/" target="_blank">Open Portal</a></div>
 </div>
 
-<div class="card">
-<h3>TG EAPCET</h3>
-<a href="https://eapcet.tgche.ac.in/" target="_blank">Open Portal</a>
-</div>
-
-<div class="card">
-<h3>TS Intermediate</h3>
-<a href="https://bie.telangana.gov.in/" target="_blank">Open Portal</a>
-</div>
-
-<div class="card">
-<h3>Osmania University</h3>
-<a href="https://www.osmania.ac.in/" target="_blank">Open Portal</a>
-</div>
-
-<div class="card">
-<h3>DOST Admissions</h3>
-<a href="https://dost.cgg.gov.in/" target="_blank">Open Portal</a>
-</div>
-
-<div class="card">
-<h3>SSC Board</h3>
-<a href="https://bse.telangana.gov.in/" target="_blank">Open Portal</a>
-</div>
-
-</div>
-
-<!-- UNIVERSITIES -->
-
+<!-- EXAM UPDATES -->
 <div class="section">
-
-<h2>Telangana Universities</h2>
-
-<ul>
-
-<li><a href="https://jntuh.ac.in/" target="_blank">JNTU Hyderabad</a></li>
-
-<li><a href="https://kakatiya.ac.in/" target="_blank">Kakatiya University</a></li>
-
-<li><a href="https://satavahana.ac.in/" target="_blank">Satavahana University</a></li>
-
-<li><a href="https://palamuruuniversity.ac.in/" target="_blank">Palamuru University</a></li>
-
-<li><a href="https://telanganauniversity.ac.in/" target="_blank">Telangana University</a></li>
-
+<h2>📢 Latest Telangana Exam Updates</h2>
+<ul id="exam-updates">
+<!-- JS will populate -->
 </ul>
+</div>
 
+<!-- TECH NEWS -->
+<div class="section">
+<h2>🌐 Live Tech News (AI & Software)</h2>
+<ul id="tech-news">
+<!-- JS will populate -->
+</ul>
 </div>
 
 <!-- FOOTER -->
-
 <footer>
-
 © 2026 CSGuruTelugu | Telangana Student Portal
-
 </footer>
 
+<!-- VISITOR COUNTER -->
+<div class="counter">Visitors: <span id="visitor-count">0</span></div>
+
 <!-- CHATBOT -->
-
 <div id="chatbot" onclick="toggleChat()">💬</div>
-
 <div id="chatbox">
-
-<div id="chatbox-header">CSGuru AI</div>
-
-<div id="chatbox-body">
-
-Hello 👋  
-Ask about Telangana exams, universities, or jobs.
-
-</div>
-
-<input type="text" placeholder="Type your question...">
-
+  <div id="chatbox-header">CSGuru AI</div>
+  <div id="chatbox-body">
+    Hello 👋 Ask about Telangana exams, universities, or jobs.
+  </div>
+  <input type="text" placeholder="Type your question..." onkeypress="if(event.key==='Enter'){answerAI(this.value)}">
 </div>
 
 <script>
+// DARK MODE
+function toggleDarkMode(){document.body.classList.toggle('dark');}
 
+// CHATBOT
 function toggleChat(){
-let box=document.getElementById("chatbox");
-
-if(box.style.display==="block")
-box.style.display="none";
-else
-box.style.display="block";
+  let box=document.getElementById("chatbox");
+  box.style.display = box.style.display==="block" ? "none":"block";
+}
+function answerAI(q){
+  let body=document.getElementById("chatbox-body");
+  body.innerHTML+="<div>You: "+q+"</div>";
+  body.innerHTML+="<div>Bot: This is a placeholder answer. Use OpenAI API for real AI answers.</div>";
+  body.scrollTop=body.scrollHeight;
 }
 
-</script>
+// EXAM UPDATES (Static JSON Example, can upgrade to API)
+const examUpdates=[
+  {title:"TG EAPCET 2026 Registration Started",link:"https://eapcet.tgche.ac.in/"},
+  {title:"TG ICET 2026 Notification Released",link:"https://icet.tgche.ac.in/"},
+  {title:"TG ECET 2026 Exam Schedule",link:"https://ecet.tgche.ac.in/"},
+];
+const ulExams=document.getElementById("exam-updates");
+examUpdates.forEach(e=>{let li=document.createElement("li");li.innerHTML='<a href="'+e.link+'" target="_blank">'+e.title+'</a>';ulExams.appendChild(li);});
 
+// TECH NEWS API (free placeholder, replace with API key)
+const news=[{title:"OpenAI releases GPT-5",link:"https://openai.com/blog/gpt-5/"},{title:"Google AI updates 2026",link:"https://ai.googleblog.com/"}];
+const ulNews=document.getElementById("tech-news");
+news.forEach(n=>{let li=document.createElement("li");li.innerHTML='<a href="'+n.link+'" target="_blank">'+n.title+'</a>';ulNews.appendChild(li);});
+
+// VISITOR COUNTER (CountAPI)
+fetch('https://api.countapi.xyz/hit/csgurutelugu/visits')
+.then(res=>res.json())
+.then(res=>document.getElementById("visitor-count").innerText=res.value);
+
+</script>
 </body>
 </html>
