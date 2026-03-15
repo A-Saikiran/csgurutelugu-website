@@ -2,199 +2,187 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>CSGuruTelugu | Telangana & Global Learning Portals</title>
+<title>Telangana & India Education Portals | CSGuruTelugu</title>
 
 <style>
+
+/* BASIC STYLES */
+
 body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f2f5ff;
-    transition: background 0.3s, color 0.3s;
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#f9f9f9;
+  color:#333;
 }
 
-/* DARK MODE */
-body.dark{
-    background:#121212;
-    color:white;
+a{
+  color:#1565c0;
+  text-decoration:none;
+}
+a:hover{
+  color:#d32f2f;
 }
 
-/* NAVBAR */
+/* NAVIGATION */
+
 .navbar{
-    background:#0d47a1;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    color:white;
+  background:#0d47a1;
+  color:white;
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 .navbar a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-    font-weight:bold;
+  color:white;
+  font-weight:bold;
+  margin:0 10px;
 }
-.navbar a:hover{color:#ffd54f;}
-.dark-mode-btn{
-    cursor:pointer;
-    padding:5px 10px;
-    background:#ffd54f;
-    border:none;
-    border-radius:5px;
-    font-weight:bold;
+.navbar a:hover{
+  color:#ffd54f;
 }
 
 /* HEADER */
+
 header{
-    text-align:center;
-    padding:30px;
-    background:linear-gradient(120deg,#1e88e5,#42a5f5);
-    color:white;
-}
-header h1{font-size:40px;}
-header p{font-size:18px;}
-
-/* SEARCH */
-.search-box{
-    text-align:center;
-    margin:20px;
-}
-.search-box input{
-    width:60%;
-    padding:10px;
-    font-size:16px;
+  background:linear-gradient(120deg,#1e88e5,#42a5f5);
+  color:white;
+  text-align:center;
+  padding:25px 15px;
 }
 
-/* SECTIONS */
+header h1{
+  margin:0;
+  font-size:36px;
+}
+header p{
+  margin-top:8px;
+  font-size:18px;
+}
+
+/* SECTION STYLES */
+
 .section{
-    padding:20px 40px;
+  padding:25px 40px;
 }
 .section h2{
-    color:#0d47a1;
-    margin-bottom:15px;
+  color:#0d47a1;
+  margin-bottom:15px;
+  border-bottom:2px solid #0d47a1;
+  display:inline-block;
 }
 
-/* CARDS */
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+/* LIST */
+
+ul{
+  list-style:none;
+  padding:0;
 }
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.15);
-    transition:transform 0.3s;
+li{
+  padding:8px 0;
+  font-size:16px;
 }
-.card:hover{
-    transform:scale(1.05);
-}
-.card a{
-    text-decoration:none;
-    color:#1565c0;
-    font-weight:bold;
-}
-.card a:hover{color:#d32f2f;}
 
 /* FOOTER */
+
 footer{
-    background:#0d47a1;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
+  background:#0d47a1;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:30px;
 }
+
 </style>
+
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
+
 <div class="navbar">
-    <div><b>CSGuruTelugu</b></div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="#">Tutorials</a>
-        <a href="#">Materials</a>
-        <a href="telangana.html">Learning Portals</a>
-        <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark/Light</button>
-    </div>
+  <div>CSGuruTelugu</div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="telangana.html">Education Portals</a>
+  </div>
 </div>
 
 <!-- HEADER -->
+
 <header>
-    <h1>CSGuruTelugu Learning Portals</h1>
-    <p>Government, State & Global Free Learning Platforms</p>
+  <h1>Official Education Portals</h1>
+  <p>Verified Government & Trusted Learning Portals (India & Telangana)</p>
 </header>
 
-<!-- SEARCH -->
-<div class="search-box">
-    <input type="text" id="search" placeholder="Search portals (e.g., TSPSC, SWAYAM, Coursera)">
+<!-- GOVT OF INDIA EDUCATION -->
+
+<div class="section">
+  <h2>🇮🇳 Government of India — National Education Portals</h2>
+  <ul>
+    <li><a href="https://mhrd.gov.in/" target="_blank">Ministry of Education (MoE)</a> — Government of India</li>
+    <li><a href="https://ugc.gov.in/" target="_blank">University Grants Commission (UGC)</a></li>
+    <li><a href="https://swayam.gov.in/" target="_blank">SWAYAM Online Courses (Govt of India)</a></li>
+    <li><a href="https://swayamprabha.gov.in/" target="_blank">SWAYAM PRABHA Educational TV Channels</a></li>
+    <li><a href="https://diksha.gov.in/" target="_blank">DIKSHA — School Education Platform (Govt)</a></li>
+    <li><a href="https://ndl.gov.in/" target="_blank">National Digital Library of India (NDLI)</a></li>
+    <li><a href="https://www.inflibnet.ac.in/" target="_blank">INFLIBNET Centre — Academic Resources</a></li>
+    <li><a href="https://nptel.ac.in/" target="_blank">NPTEL — Engineering & Tech Courses</a></li>
+    <li><a href="https://nad.gov.in/" target="_blank">National Academic Depository (NAD)</a></li>
+  </ul>
 </div>
 
-<!-- GOVERNMENT OF INDIA PORTALS -->
+<!-- TELANGANA STATE EDUCATION -->
+
 <div class="section">
-    <h2>🇮🇳 Government of India Learning Portals</h2>
-    <div class="cards" id="india-portals">
-        <div class="card"><a href="https://www.mhrd.gov.in/" target="_blank">MHRD / Ministry of Education</a></div>
-        <div class="card"><a href="https://www.ugc.ac.in/" target="_blank">UGC - University Grants Commission</a></div>
-        <div class="card"><a href="https://nptel.ac.in/" target="_blank">NPTEL Online Courses</a></div>
-        <div class="card"><a href="https://swayam.gov.in/" target="_blank">SWAYAM</a></div>
-        <div class="card"><a href="https://www.aicte-india.org/" target="_blank">AICTE</a></div>
-        <div class="card"><a href="https://www.ignou.ac.in/" target="_blank">IGNOU Open University</a></div>
-        <div class="card"><a href="https://www.cbse.gov.in/" target="_blank">CBSE Learning Portal</a></div>
-    </div>
+  <h2>🏛 Telangana Government Education Portals</h2>
+  <ul>
+    <li><a href="https://www.telangana.gov.in/departments/higher-education/" target="_blank">Telangana Dept of Higher Education</a></li>
+    <li><a href="https://tgche.ac.in/" target="_blank">Telangana Council of Higher Education (TGCHE)</a></li>
+    <li><a href="https://dost.cgg.gov.in/" target="_blank">DOST Online Degree Admissions</a></li>
+    <li><a href="https://bie.telangana.gov.in/" target="_blank">Telangana Board of Intermediate Education</a></li>
+    <li><a href="https://bse.telangana.gov.in/" target="_blank">TS SSC Board (School Board)</a></li>
+    <li><a href="https://tspsc.gov.in/" target="_blank">Telangana State Public Service Commission (TSPSC)</a></li>
+  </ul>
 </div>
 
-<!-- TELANGANA / STATE PORTALS -->
+<!-- NATIONAL HIGHER / CET -->
+
 <div class="section">
-    <h2>🏛 Telangana & State Government Portals</h2>
-    <div class="cards" id="state-portals">
-        <div class="card"><a href="https://tsche.ac.in/" target="_blank">TGCHE - Telangana Higher Education</a></div>
-        <div class="card"><a href="https://bie.telangana.gov.in/" target="_blank">Telangana Intermediate Board</a></div>
-        <div class="card"><a href="https://bse.telangana.gov.in/" target="_blank">TS SSC Board</a></div>
-        <div class="card"><a href="https://tspsc.gov.in/" target="_blank">TSPSC Official Jobs</a></div>
-        <div class="card"><a href="https://dost.cgg.gov.in/" target="_blank">DOST Admissions</a></div>
-        <div class="card"><a href="https://polycetts.nic.in/" target="_blank">TS POLYCET</a></div>
-        <div class="card"><a href="https://tgche.ac.in/eapcet/" target="_blank">TG EAPCET</a></div>
-        <div class="card"><a href="https://tgche.ac.in/icet/" target="_blank">TG ICET</a></div>
-    </div>
+  <h2>🎓 Telangana Entrance & Higher Ed Portals</h2>
+  <ul>
+    <li><a href="https://polycetts.nic.in/" target="_blank">TS POLYCET (Polytechnic)</a></li>
+    <li><a href="https://eapcet.tgche.ac.in/" target="_blank">TG EAPCET (UG Admissions)</a></li>
+    <li><a href="https://icet.tgche.ac.in/" target="_blank">TG ICET (MBA/MCA)</a></li>
+    <li><a href="https://edcetadm.tgche.ac.in/" target="_blank">TG ED.CET Admissions</a></li>
+    <li><a href="https://lawcet.tgche.ac.in/" target="_blank">TG LAWCET</a></li>
+    <li><a href="https://pgecet.tgche.ac.in/" target="_blank">TG PGECET</a></li>
+    <li><a href="https://ecet.tgche.ac.in/" target="_blank">TG ECET</a></li>
+  </ul>
 </div>
 
-<!-- GLOBAL FREE LEARNING PLATFORMS -->
+<!-- UNIVERSITIES -->
+
 <div class="section">
-    <h2>🌐 Global Free Learning Platforms</h2>
-    <div class="cards" id="global-portals">
-        <div class="card"><a href="https://www.coursera.org/" target="_blank">Coursera (Free Courses)</a></div>
-        <div class="card"><a href="https://www.edx.org/" target="_blank">edX Free Courses</a></div>
-        <div class="card"><a href="https://www.udemy.com/courses/free/" target="_blank">Udemy Free Courses</a></div>
-        <div class="card"><a href="https://www.netacad.com/" target="_blank">Cisco Networking Academy</a></div>
-        <div class="card"><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></div>
-        <div class="card"><a href="https://alison.com/" target="_blank">Alison Free Courses</a></div>
-        <div class="card"><a href="https://openlearning.com/" target="_blank">OpenLearning</a></div>
-    </div>
+  <h2>🎓 Telangana Government Universities</h2>
+  <ul>
+    <li><a href="https://www.osmania.ac.in/" target="_blank">Osmania University</a></li>
+    <li><a href="https://jntuh.ac.in/" target="_blank">JNTU Hyderabad</a></li>
+    <li><a href="https://kakatiya.ac.in/" target="_blank">Kakatiya University</a></li>
+    <li><a href="https://satavahana.ac.in/" target="_blank">Satavahana University</a></li>
+    <li><a href="https://palamuruuniversity.ac.in/" target="_blank">Palamuru University</a></li>
+    <li><a href="https://telanganauniversity.ac.in/" target="_blank">Telangana University</a></li>
+    <li><a href="https://mguniversity.ac.in/" target="_blank">Mahatma Gandhi University</a></li>
+    <li><a href="https://braou.ac.in/" target="_blank">Dr B R Ambedkar Open University</a></li>
+  </ul>
 </div>
 
 <!-- FOOTER -->
+
 <footer>
-    © 2026 CSGuruTelugu | Learning Portals
+© 2026 CSGuruTelugu | Verified Education Portals
 </footer>
-
-<script>
-// DARK MODE
-function toggleDarkMode(){document.body.classList.toggle('dark');}
-
-// SEARCH FILTER
-const searchInput=document.getElementById("search");
-searchInput.addEventListener("input", function(){
-    const filter=this.value.toLowerCase();
-    const allCards=document.querySelectorAll(".cards .card");
-    allCards.forEach(card=>{
-        if(card.innerText.toLowerCase().includes(filter)){card.style.display="block";}
-        else{card.style.display="none";}
-    });
-});
-</script>
 
 </body>
 </html>
