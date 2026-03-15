@@ -14,15 +14,11 @@ animation:bgmove 10s infinite;
 color:white;
 }
 
-/* ANIMATED BACKGROUND */
-
 @keyframes bgmove{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
-
-/* TOP BAR */
 
 .topbar{
 background:black;
@@ -30,8 +26,6 @@ padding:8px;
 text-align:center;
 font-size:14px;
 }
-
-/* MENU */
 
 .navbar{
 background:#111;
@@ -50,8 +44,6 @@ font-weight:bold;
 .navbar a:hover{
 color:#ffcc00;
 }
-
-/* HEADER */
 
 .header{
 display:flex;
@@ -74,8 +66,6 @@ background: linear-gradient(90deg,#ffcc00,#ff0066);
 color:transparent;
 }
 
-/* YOUTUBE BUTTON */
-
 .youtube{
 text-align:center;
 margin-top:10px;
@@ -90,15 +80,11 @@ font-size:18px;
 border-radius:8px;
 }
 
-/* LAYOUT */
-
 .container{
 display:flex;
 margin:30px;
 gap:20px;
 }
-
-/* CARDS */
 
 .card{
 background:white;
@@ -113,8 +99,6 @@ transition:transform 0.3s;
 .card:hover{
 transform:scale(1.05);
 }
-
-/* SCROLL */
 
 .scroll{
 height:250px;
@@ -141,8 +125,6 @@ font-weight:bold;
 0%{top:100%;}
 100%{top:-100%;}
 }
-
-/* MATERIALS */
 
 .materials{
 background:white;
@@ -172,8 +154,6 @@ font-weight:bold;
 color:red;
 }
 
-/* AI BOT */
-
 .chatbot{
 position:fixed;
 bottom:20px;
@@ -186,12 +166,12 @@ font-size:22px;
 cursor:pointer;
 }
 
-/* FOOTER */
-
 .footer{
 background:black;
 text-align:center;
 padding:20px;
+margin-top:40px;
+width:100%;
 }
 
 </style>
@@ -200,105 +180,48 @@ padding:20px;
 
 <body>
 
-<!-- DATE & TIME -->
-
 <div class="topbar">
-
 <span id="datetime"></span>
-
 </div>
-
-<!-- MENU -->
 
 <div class="navbar">
-
 <a href="#">Home</a>
+<a href="ugcnet.html">UGCNET / TGSET</a>
+<a href="#resources">Free Resources</a>
 <a href="#materials">Tutorials / Materials</a>
 <a href="about.html">About</a>
-
 </div>
 
-<!-- HEADER -->
-
 <div class="header">
-
 <img src="LOGO.jpg" class="logo">
-
 <div class="title" id="typing"></div>
-
 </div>
 
 <div class="youtube">
-
 <a href="https://www.youtube.com/@CSGuruTelugu" target="_blank">
-
 ▶ Visit My YouTube Channel
-
 </a>
-
 </div>
-
-<!-- MAIN SECTION -->
 
 <div class="container">
 
 <div class="card">
 
-<h2>🔥 Latest Job Updates (Official Sources)</h2>
+<h2>🔥 Latest Job Updates</h2>
 
 <div class="scroll">
 
 <ul>
 
-<li>
-<a href="https://www.ncs.gov.in/" target="_blank">
-National Career Service – Govt Jobs Portal (Apply Online)
-</a>
-</li>
-
-<li>
-<a href="https://ssc.nic.in/" target="_blank">
-SSC Recruitment – Staff Selection Commission
-</a>
-</li>
-
-<li>
-<a href="https://www.ibps.in/" target="_blank">
-IBPS Bank Jobs – PO / Clerk Recruitment
-</a>
-</li>
-
-<li>
-<a href="https://www.rrbcdg.gov.in/" target="_blank">
-Indian Railway Recruitment Board Jobs
-</a>
-</li>
-
-<li>
-<a href="https://www.drdo.gov.in/careers" target="_blank">
-DRDO Careers – Defence Research Jobs
-</a>
-</li>
-
-<li>
-<a href="https://careers.microsoft.com/" target="_blank">
-Microsoft Careers – Software Jobs
-</a>
-</li>
-
-<li>
-<a href="https://www.amazon.jobs/" target="_blank">
-Amazon Official Jobs Portal
-</a>
-</li>
-
-<li>
-<a href="https://careers.google.com/" target="_blank">
-Google Careers – Apply Online
-</a>
-</li>
+<li><a href="https://www.ncs.gov.in/" target="_blank">National Career Service (Govt Jobs)</a></li>
+<li><a href="https://ssc.nic.in/" target="_blank">SSC Recruitment</a></li>
+<li><a href="https://www.ibps.in/" target="_blank">IBPS Bank Jobs</a></li>
+<li><a href="https://www.rrbcdg.gov.in/" target="_blank">Railway Recruitment Board</a></li>
+<li><a href="https://careers.google.com/" target="_blank">Google Careers</a></li>
 
 </ul>
+
+</div>
 
 </div>
 
@@ -310,13 +233,10 @@ Google Careers – Apply Online
 
 <ul>
 
-<li><a href="https://www.google.com/search?q=latest+ai+news" target="_blank">Latest AI Innovations</a></li>
-
-<li><a href="https://www.google.com/search?q=openai+news" target="_blank">OpenAI Updates</a></li>
-
-<li><a href="https://www.google.com/search?q=google+ai+news" target="_blank">Google AI Developments</a></li>
-
-<li><a href="https://www.google.com/search?q=tech+news+world" target="_blank">World Tech News</a></li>
+<li><a href="https://news.google.com/search?q=AI" target="_blank">Latest AI News</a></li>
+<li><a href="https://news.google.com/search?q=technology" target="_blank">World Tech News</a></li>
+<li><a href="https://openai.com/blog" target="_blank">OpenAI Updates</a></li>
+<li><a href="https://ai.googleblog.com/" target="_blank">Google AI Blog</a></li>
 
 </ul>
 
@@ -325,8 +245,6 @@ Google Careers – Apply Online
 </div>
 
 </div>
-
-<!-- MATERIALS -->
 
 <div class="materials" id="materials">
 
@@ -335,61 +253,55 @@ Google Careers – Apply Online
 <ul>
 
 <li><a href="java.html">Java Programming</a></li>
-
 <li><a href="cisco.html">Cisco Networking</a></li>
-
-<li><a href="#">Add More Subjects Here</a></li>
 
 </ul>
 
 </div>
 
-<!-- AI BOT -->
+<div class="materials" id="resources">
 
-<div class="chatbot" onclick="openAI()">🤖</div>
+<h2>🎓 Free Learning Resources</h2>
 
-<!-- FOOTER -->
+<ul>
 
-<div class="footer">
+<li><a href="https://infyspringboard.onwingspan.com/" target="_blank">Infosys Springboard</a></li>
+<li><a href="https://www.netacad.com/" target="_blank">Cisco NetAcad</a></li>
+<li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+<li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
 
-© 2026 CSGuruTelugu | All Rights Reserved
+</ul>
 
 </div>
 
-<script>
+<div class="chatbot" onclick="openAI()">🤖</div>
 
-/* LIVE DATE TIME */
+<div class="footer">
+© 2026 CSGuruTelugu | All Rights Reserved
+</div>
+
+<script>
 
 function updateTime(){
 let now=new Date();
 document.getElementById("datetime").innerHTML=now.toLocaleString();
 }
-
 setInterval(updateTime,1000);
-
-/* TYPING EFFECT */
 
 let text="CSGuruTelugu";
 let i=0;
 
 function typing(){
-
 if(i<text.length){
 document.getElementById("typing").innerHTML+=text.charAt(i);
 i++;
 setTimeout(typing,120);
 }
-
 }
-
 typing();
 
-/* AI BOT */
-
 function openAI(){
-
 window.open("https://chat.openai.com","_blank");
-
 }
 
 </script>
