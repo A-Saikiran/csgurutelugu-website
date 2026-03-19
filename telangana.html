@@ -1,176 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSGURU TELUGU | Official 2026 Portal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
-    <style>
-        :root { --india-saffron: #FF9933; --india-white: #FFFFFF; --india-green: #138808; --india-blue: #000080; }
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #333; scroll-behavior: smooth; }
-        
-        .gov-bar { background: linear-gradient(to right, var(--india-saffron), var(--india-white), var(--india-green)); height: 6px; }
-        .nav-elite { background: #fff; border-bottom: 4px solid var(--india-blue); box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        
-        /* Fantastic Hover Interface */
-        .elite-card {
-            background: #fff; border: 1px solid #e2e8f0; border-top: 4px solid var(--india-blue);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); cursor: pointer;
-            position: relative; overflow: hidden;
-        }
-        .elite-card:hover {
-            transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 30px rgba(0,0,0,0.1);
-            border-top-color: var(--india-saffron);
-        }
-        .elite-card::after {
-            content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 3px;
-            background: var(--india-green); transition: 0.4s;
-        }
-        .elite-card:hover::after { width: 100%; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSGURU TELUGU | Telangana Academic Hub 2026</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root {
+  --india-saffron:#FF9933; --india-green:#138808; --india-blue:#000080;
+}
+body { font-family: 'Inter', sans-serif; background:#f8fafc; margin:0; scroll-behavior:smooth; }
 
-        .section-ribbon { 
-            background: var(--india-blue); color: white; padding: 10px 30px; 
-            border-radius: 0 50px 50px 0; font-weight: 800; display: inline-block;
-            box-shadow: 5px 5px 0 var(--india-saffron); margin-bottom: 30px;
-        }
-    </style>
+/* GOV BAR */
+.gov-bar { background:linear-gradient(to right,var(--india-saffron),#fff,var(--india-green)); height:6px; }
+
+/* NAVIGATION */
+.nav-elite { background:#fff; border-bottom:4px solid var(--india-blue); box-shadow:0 4px 6px rgba(0,0,0,.05); }
+.nav-elite a:hover { color:#f97316; }
+
+/* HEADER */
+header {
+  text-align:center; background:#1e293b; color:white; padding:4rem 1rem; border-bottom:8px solid #f97316;
+}
+header h1 { font-size:3rem; font-weight:900; font-style:italic; }
+header p { font-size:1rem; color:#cbd5e1; margin-top:0.5rem; }
+#clock { margin-top:1rem; font-family:monospace; font-size:0.9rem; }
+
+/* CARD */
+.elite-card {
+  background:#fff; border-radius:16px; border-top:4px solid var(--india-blue);
+  transition:0.4s; cursor:pointer; position:relative; overflow:hidden;
+}
+.elite-card:hover { transform:translateY(-8px) scale(1.02); box-shadow:0 15px 30px rgba(0,0,0,.15); }
+
+/* ICONS */
+.icon { width:50px;height:50px;border-radius:12px; display:flex;align-items:center;justify-content:center; color:#fff; font-size:24px; }
+
+/* STATUS */
+.status { font-size:10px; font-weight:bold; padding:4px 8px; border-radius:999px; text-transform:uppercase; }
+.upcoming{background:#fef3c7;color:#92400e;}
+.open{background:#dcfce7;color:#166534;}
+.closed{background:#fee2e2;color:#991b1b;}
+
+/* FILTER */
+.filter-btn { padding:6px 12px; border-radius:999px; font-size:12px; font-weight:700; background:#e2e8f0; cursor:pointer; }
+.filter-btn.active { background:#1e3a8a; color:white; }
+
+/* COUNTDOWN */
+.countdown { font-size:11px; font-weight:bold; color:#2563eb; }
+
+/* SECTION RIBBON */
+.section-ribbon { background:#1e40af; color:white; padding:8px 24px; border-radius:0 50px 50px 0; font-weight:800; display:inline-block; margin-bottom:1rem; }
+
+/* GRID */
+.grid-3 { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); margin-bottom:3rem; }
+</style>
 </head>
 <body>
 
 <div class="gov-bar"></div>
-<nav class="nav-elite px-8 py-4 flex justify-between items-center sticky top-0 z-50">
-    <div class="flex items-center gap-4">
-        <div class="w-12 h-12 bg-blue-900 rounded-2xl flex items-center justify-center text-white font-black text-2xl shadow-lg">CS</div>
-        <div class="leading-tight">
-            <div class="text-xl font-black text-blue-900">CSGURU <span class="text-orange-500 italic">TELUGU</span></div>
-            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Personal Academic Blog 2026</div>
-        </div>
+
+<nav class="nav-elite px-6 py-4 flex justify-between items-center sticky top-0 z-50">
+  <div class="flex items-center gap-4">
+    <div class="w-12 h-12 bg-blue-900 rounded-2xl flex items-center justify-center text-white font-black text-2xl shadow-lg">CS</div>
+    <div class="leading-tight">
+      <div class="text-xl font-black text-blue-900">CSGURU <span class="text-orange-500 italic">TELUGU</span></div>
+      <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Personal Academic Blog 2026</div>
     </div>
-    <div class="hidden lg:flex gap-8 text-[11px] font-extrabold uppercase text-blue-900">
-        <a href="#cets" class="hover:text-orange-500 transition">Entrance Exams</a>
-        <a href="#boards" class="hover:text-orange-500 transition">Education Boards</a>
-        <a href="#unis" class="hover:text-orange-500 transition">Universities</a>
-    </div>
+  </div>
+  <div class="hidden lg:flex gap-6 text-[11px] font-extrabold uppercase text-blue-900">
+    <a href="#cets">Entrance Exams</a>
+    <a href="#boards">Education Boards</a>
+    <a href="#unis">Universities</a>
+  </div>
 </nav>
 
-<!-- Header -->
-<header class="bg-slate-900 text-white py-16 px-8 text-center border-b-8 border-orange-500">
-    <h1 class="text-4xl md:text-6xl font-black mb-4 italic tracking-tighter">Telangana <span class="text-blue-400">Academic</span> Hub</h1>
-    <p class="text-slate-400 text-lg max-w-2xl mx-auto font-medium">Complete, verified links for all 21 Govt Universities, 4 Boards, and 8 TG CETs.</p>
-    <div id="live-clock" class="mt-6 font-mono text-sm bg-blue-800/50 border border-blue-700 px-6 py-1.5 rounded-full inline-block"></div>
+<header>
+  <h1>Telangana Academic Hub 2026</h1>
+  <p>Complete verified links for all CETs, Education Boards & Govt Universities.</p>
+  <div id="clock"></div>
 </header>
 
-<main class="max-w-7xl mx-auto px-6 py-16">
-    
-    <!-- 1. ENTRANCE EXAMS (ALL 8 TG CETS) -->
-    <section id="cets" class="mb-24">
-        <div class="section-ribbon">2026 Entrance Exams (TG CETs)</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="cet-grid"></div>
-    </section>
+<main class="max-w-7xl mx-auto p-6">
 
-    <!-- 2. KEY EDUCATION BOARDS -->
-    <section id="boards" class="mb-24">
-        <div class="section-ribbon" style="background:var(--india-green)">Key Education Boards in Telangana</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="board-grid"></div>
-    </section>
+<!-- FILTERS -->
+<div class="flex gap-3 mb-6">
+  <div class="filter-btn active" data-filter="all">All CETs</div>
+  <div class="filter-btn" data-filter="upcoming">Upcoming</div>
+  <div class="filter-btn" data-filter="open">Ongoing</div>
+  <div class="filter-btn" data-filter="closed">Closed</div>
+</div>
 
-    <!-- 3. UNIVERSITIES (FULL LIST OF 21 GOVT UNIS) -->
-    <section id="unis">
-        <div class="section-ribbon" style="background:var(--india-saffron)">Official Government Universities (State & Central)</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="uni-grid"></div>
-    </section>
+<!-- CET GRID -->
+<div class="section-ribbon">Telangana CETs 2026</div>
+<div id="grid" class="grid-3"></div>
+
+<!-- Education Boards -->
+<div class="section-ribbon" style="background:var(--india-green)">Key Education Boards</div>
+<div id="boards" class="grid-3"></div>
+
+<!-- Universities -->
+<div class="section-ribbon" style="background:var(--india-saffron)">Telangana Government Universities</div>
+<div id="unis" class="grid-3"></div>
 
 </main>
 
-<footer class="bg-slate-950 py-12 text-center text-slate-500 text-xs font-bold uppercase tracking-[0.3em]">
+<footer class="bg-slate-950 py-6 text-center text-slate-500 text-xs font-bold uppercase tracking-[0.3em]">
     CSGURU TELUGU | Verified 2026 Academic Portal
 </footer>
 
-<!-- AI SEARCH BOT -->
-<script src="https://cdn.botpress.cloud"></script>
-<script src="https://files.bpcontent.cloud"></script>
-
 <script>
-// Live Clock
-setInterval(() => { document.getElementById('live-clock').innerText = new Date().toLocaleString('en-IN'); }, 1000);
+// CLOCK
+setInterval(()=>{ document.getElementById("clock").innerText = new Date().toLocaleString("en-IN"); },1000);
 
-// DATASETS
-const cets = [
-    { n: "TG EAPCET", s: "Eng, Agri & Pharma", a: "4 Apr", e: "May 4-11", l: "https://eapcet.tgche.ac.in" },
-    { n: "TG ICET", s: "MBA & MCA", a: "16 Mar", e: "May 13-14", l: "https://icet.tgche.ac.in" },
-    { n: "TG ECET", s: "Lateral Entry", a: "18 Apr", e: "May 15", l: "https://ecet.tgche.ac.in" },
-    { n: "TG EDCET", s: "B.Ed Course", a: "25 Apr", e: "May 12", l: "https://edcet.tgche.ac.in" },
-    { n: "TG LAWCET", s: "LLB Admissions", a: "30 Apr", e: "May 18", l: "https://lawcet.tgche.ac.in" },
-    { n: "TG PGLCET", s: "LLM Post-Grad", a: "30 Apr", e: "May 18", l: "https://lawcet.tgche.ac.in" },
-    { n: "TG PGECET", s: "M.Tech / M.Pharm", a: "10 May", e: "May 28-31", l: "https://pgecet.tgche.ac.in" },
-    { n: "TG PECET", s: "Physical Edu", a: "15 May", e: "May 31 - Jun 3", l: "https://pecet.tgche.ac.in" }
+// CET DATA
+const exams = [
+  {n:"TG EAPCET", a:"2026-04-04", e:"2026-05-11", type:"Eng/Agri/Pharma", icon:"🧪", l:"https://eapcet.tsche.ac.in"},
+  {n:"TG ICET", a:"2026-03-16", e:"2026-05-14", type:"MBA/MCA", icon:"📊", l:"https://icet.tgche.ac.in"},
+  {n:"TG ECET", a:"2026-04-18", e:"2026-05-15", type:"Eng Lateral", icon:"⚙️", l:"https://ecet.tsche.ac.in"},
+  {n:"TG PGECET", a:"2026-05-10", e:"2026-05-31", type:"PG Eng", icon:"💻", l:"https://pgecet.tgche.ac.in"},
+  {n:"TG LAWCET", a:"2026-04-30", e:"2026-05-18", type:"Law", icon:"⚖️", l:"https://lawcet.tgche.ac.in"},
+  {n:"TG PGLCET", a:"2026-04-30", e:"2026-05-18", type:"PG Law", icon:"🎓", l:"https://lawcet.tgche.ac.in"},
+  {n:"TG EDCET", a:"2026-04-25", e:"2026-05-12", type:"B.Ed", icon:"📚", l:"https://edcet.tgche.ac.in"},
+  {n:"TG PECET", a:"2026-05-15", e:"2026-06-03", type:"Physical Edu", icon:"🏋️", l:"https://pecet.tsche.ac.in"},
+  {n:"TG DEECET", a:"2026-04-20", e:"2026-05-05", type:"Diploma Edu", icon:"🎒", l:"https://deecet.tsche.ac.in"}
 ];
 
-const boards = [
-    { n: "BSE Telangana (TS SSC)", d: "Secondary School Certificate exams for Class 10th.", l: "https://bse.telangana.gov.in" },
-    { n: "TSBIE (Intermediate)", d: "Oversees Class 11 and 12 public examinations.", l: "https://tsbie.cgg.gov.in" },
-    { n: "TOSS (Open School)", d: "Open and distance learning opportunities.", l: "https://www.telanganaopenschool.org" },
-    { n: "SBTET (Technical)", d: "Manages technical education and diploma programs.", l: "https://sbtet.telangana.gov.in" }
+// EDUCATION BOARDS
+const boardsData=[
+{n:"BSE Telangana (TS SSC)", type:"Secondary", icon:"🏫", l:"https://bse.telangana.gov.in"},
+{n:"TSBIE (Intermediate)", type:"Intermediate", icon:"📘", l:"https://tsbie.cgg.gov.in"},
+{n:"TOSS (Open School)", type:"Open", icon:"📖", l:"https://www.telanganaopenschool.org"},
+{n:"SBTET (Technical)", type:"Technical", icon:"⚙️", l:"https://sbtet.telangana.gov.in"}
 ];
 
-const unis = [
-    { n: "Osmania University (OU)", l: "https://osmania.ac.in" },
-    { n: "JNTU Hyderabad (JNTUH)", l: "https://jntuh.ac.in" },
-    { n: "Kakatiya University (KU)", l: "https://kakatiya.ac.in" },
-    { n: "Telangana University (TU)", l: "https://telanganauniversity.ac.in" },
-    { n: "Mahatma Gandhi University", l: "https://mguniversity.ac.in" },
-    { n: "Palamuru University (PU)", l: "https://palamuruuniversity.ac.in" },
-    { n: "Satavahana University (SU)", l: "https://satavahana.ac.in" },
-    { n: "Dr. B.R. Ambedkar Open Uni", l: "https://braou.ac.in" },
-    { n: "Agri University (PJTSAU)", l: "https://pjtsau.edu.in" },
-    { n: "Health Sciences (KNRUHS)", l: "https://knruhs.telangana.gov.in" },
-    { n: "NALSAR Law University", l: "https://nalsar.ac.in" },
-    { n: "RGUKT Basara (IIIT)", l: "https://rgukt.ac.in" },
-    { n: "PSTU Telugu University", l: "http://teluguuniversity.ac.in" },
-    { n: "JNAFAU Fine Arts Uni", l: "https://jnafau.ac.in" },
-    { n: "Veterinary Uni (PVNR)", l: "https://tsvu.nic.in" },
-    { n: "Women's Uni (Ilamma)", l: "https://tgche.ac.in" },
-    { n: "Uni of Hyderabad (UoH)", l: "https://uohyd.ac.in", c: true },
-    { n: "EFLU Hyderabad", l: "https://efluniversity.ac.in", c: true },
-    { n: "MANUU Hyderabad", l: "https://manuu.edu.in", c: true },
-    { n: "Central Tribal University", l: "https://tgche.ac.in", c: true }
+// UNIVERSITIES
+const unisData=[
+{n:"Osmania University", type:"General", icon:"🏛️", l:"https://osmania.ac.in"},
+{n:"JNTUH", type:"Engineering", icon:"⚙️", l:"https://jntuh.ac.in"},
+{n:"Kakatiya University", type:"General", icon:"🎓", l:"https://kakatiya.ac.in"},
+{n:"Telangana University", type:"General", icon:"🎓", l:"https://telanganauniversity.ac.in"},
+{n:"Mahatma Gandhi University", type:"General", icon:"🎓", l:"https://mguniversity.ac.in"},
+{n:"Palamuru University", type:"General", icon:"🎓", l:"https://palamuruuniversity.ac.in"},
+{n:"Satavahana University", type:"General", icon:"🎓", l:"https://satavahana.ac.in"},
+{n:"Dr B.R. Ambedkar Open Uni", type:"Open", icon:"📖", l:"https://braou.ac.in"},
+{n:"PJTSAU", type:"Agriculture", icon:"🌾", l:"https://pjtsau.edu.in"},
+{n:"KNRUHS", type:"Medical", icon:"🩺", l:"https://knruhs.telangana.gov.in"},
+{n:"NALSAR", type:"Law", icon:"⚖️", l:"https://nalsar.ac.in"},
+{n:"RGUKT Basara", type:"Engineering", icon:"💻", l:"https://rgukt.ac.in"},
+{n:"Telugu University", type:"Arts", icon:"🎭", l:"http://teluguuniversity.ac.in"},
+{n:"JNAFAU", type:"Arts", icon:"🎨", l:"https://jnafau.ac.in"},
+{n:"Horticulture University", type:"Agriculture", icon:"🌿", l:"https://skltshu.ac.in"},
+{n:"PVNR Veterinary Uni", type:"Medical", icon:"🩺", l:"https://tsvu.nic.in"},
+{n:"Women University", type:"General", icon:"👩‍🎓", l:"https://tgche.ac.in"},
+{n:"University of Hyderabad", type:"General", icon:"🎓", l:"https://uohyd.ac.in"},
+{n:"EFLU Hyderabad", type:"General", icon:"📚", l:"https://efluniversity.ac.in"},
+{n:"MANUU Hyderabad", type:"General", icon:"📚", l:"https://manuu.edu.in"},
+{n:"Central Tribal University", type:"General", icon:"🎓", l:"https://tgche.ac.in"}
 ];
 
-// RENDERING
-const cG = document.getElementById('cet-grid');
-cets.forEach(ex => {
-    cG.innerHTML += `
-        <div class="elite-card p-6 rounded-2xl flex flex-col justify-between" onclick="window.open('${ex.l}')">
-            <div>
-                <p class="text-[10px] font-bold text-blue-500 uppercase mb-2">${ex.s}</p>
-                <h3 class="text-xl font-black text-slate-800 mb-4">${ex.n}</h3>
-                <div class="text-xs space-y-1 mb-6">
-                    <div class="flex justify-between"><span>Apply Before:</span><b class="text-red-500">${ex.a}</b></div>
-                    <div class="flex justify-between"><span>Exam Dates:</span><b class="text-slate-900">${ex.e}</b></div>
-                </div>
-            </div>
-            <div class="w-full py-2 bg-blue-900 text-white text-[10px] font-black rounded-lg text-center uppercase">Apply Portal →</div>
-        </div>`;
+// HELPERS
+function countdown(endDate){
+  const diff=new Date(endDate)-new Date();
+  if(diff<=0) return "Ended";
+  const d=Math.floor(diff/86400000);
+  const h=Math.floor((diff%86400000)/3600000);
+  return `${d}d ${h}h left`;
+}
+function status(date){
+  const now=new Date();
+  const d=new Date(date);
+  if(now>d) return "closed";
+  const diffDays=(d-now)/(1000*60*60*24);
+  if(diffDays<=10) return "open"; 
+  return "upcoming";
+}
+
+// RENDER CETs
+function render(filter="all"){
+  const grid=document.getElementById("grid");
+  grid.innerHTML=exams.filter(x=>filter==="all"||status(x.a)===filter).map(x=>{
+    const st=status(x.a);
+    return `<div class="elite-card p-5" onclick="window.open('${x.l}','_blank')">
+      <div class="flex justify-between mb-3">
+        <div class="icon">${x.icon}</div>
+        <div class="status ${st}">${st}</div>
+      </div>
+      <h3 class="font-bold text-lg">${x.n}</h3>
+      <div class="text-xs mt-2">
+        <div>Apply Before: ${x.a}</div>
+        <div class="countdown">${countdown(x.a)}</div>
+      </div>
+    </div>`;
+  }).join("");
+}
+render(); // initial
+
+// FILTER BUTTONS
+document.querySelectorAll(".filter-btn").forEach(btn=>{
+  btn.onclick=()=>{
+    document.querySelectorAll(".filter-btn").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    render(btn.dataset.filter);
+  };
 });
 
-const bG = document.getElementById('board-grid');
-boards.forEach(b => {
-    bG.innerHTML += `
-        <div class="elite-card p-6 rounded-2xl border-l-8 border-orange-500" onclick="window.open('${b.l}')">
-            <h3 class="text-lg font-black text-orange-600 mb-2">${b.n}</h3>
-            <p class="text-xs text-slate-500 leading-relaxed">${b.d}</p>
-        </div>`;
+// BOARDS
+const boardGrid=document.getElementById("boards");
+boardsData.forEach(b=>{
+  boardGrid.innerHTML+=`
+  <div class="elite-card p-4 flex items-center gap-3" onclick="window.open('${b.l}','_blank')">
+    <div class="icon">${b.icon}</div>
+    <div>
+      <h3 class="font-bold text-blue-800">${b.n}</h3>
+      <p class="text-xs text-slate-500 mt-1">${b.type}</p>
+    </div>
+  </div>`;
 });
 
-const uG = document.getElementById('uni-grid');
-unis.forEach(u => {
-    uG.innerHTML += `
-        <div class="elite-card p-4 rounded-xl flex justify-between items-center" onclick="window.open('${u.l}')" style="border-top-color: ${u.c ? '#6366f1' : '#138808'}">
-            <span class="text-xs font-bold text-slate-700">${u.n}</span>
-            <span class="text-[10px] font-black text-slate-300">GO →</span>
-        </div>`;
+// UNIVERSITIES
+const uniGrid=document.getElementById("unis");
+unisData.forEach(u=>{
+  uniGrid.innerHTML+=`
+  <div class="elite-card p-4 flex items-center gap-3" onclick="window.open('${u.l}','_blank')">
+    <div class="icon">${u.icon}</div>
+    <div>
+      <h3 class="font-bold text-green-800">${u.n}</h3>
+      <p class="text-xs text-slate-500 mt-1">${u.type}</p>
+    </div>
+  </div>`;
 });
+
+// REFRESH COUNTDOWN EVERY MINUTE
+setInterval(()=>render(document.querySelector(".filter-btn.active").dataset.filter),60000);
 </script>
+
 </body>
 </html>
