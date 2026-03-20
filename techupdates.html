@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trusted Tech News | CSGuruTelugu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+  <style>
+    :root { --accent: #ff9900; --bg: #0f172a; --card: #1e293b; --text: #f8fafc; }
+    body { background-color: var(--bg); font-family: 'Segoe UI', system-ui, sans-serif; color: var(--text); margin: 0; line-height: 1.6; }
+    
+    .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; margin-bottom: 50px; }
+    header h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 10px; }
+    header p { color: #94a3b8; font-size: 1.1rem; }
+
+    .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+    .category-section { background: var(--card); border-radius: 15px; padding: 25px; border: 1px solid #334155; }
+    .category-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; border-bottom: 2px solid #334155; padding-bottom: 10px; }
+    .category-header i { color: var(--accent); font-size: 1.5rem; }
+    .category-header h2 { font-size: 1.3rem; margin: 0; }
+
+    .source-list { list-style: none; padding: 0; margin: 0; }
+    .source-item { margin-bottom: 15px; }
+    .source-link { 
+      display: flex; flex-direction: column; text-decoration: none; 
+      background: #262f3f; padding: 12px; border-radius: 8px; border: 1px solid transparent; transition: 0.3s;
+    }
+    .source-link:hover { border-color: var(--accent); transform: translateY(-3px); background: #2d3748; }
+    .source-name { color: #38bdf8; font-weight: 700; font-size: 1.05rem; }
+    .source-desc { font-size: 0.85rem; color: #94a3b8; margin-top: 4px; }
+    
+    footer { text-align: center; margin-top: 50px; color: #64748b; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Trusted Tech Directory</h1>
+      <p>సరికొత్త టెక్నాలజీ సమాచారం కోసం అత్యంత నమ్మకమైన వెబ్‌సైట్లు</p>
+    </header>
+
+    <div class="category-grid">
+      <!-- 🌍 INTERNATIONAL TECH -->
+      <div class="category-section">
+        <div class="category-header">
+          <i class="fas fa-globe"></i>
+          <h2>Global Leaders</h2>
+        </div>
+        <div class="source-list">
+          <a href="https://techcrunch.com/" target="_blank" class="source-link">
+            <span class="source-name">TechCrunch</span>
+            <span class="source-desc">Top source for startups & venture capital news.</span>
+          </a>
+          <a href="https://www.theverge.com" target="_blank" class="source-link">
+            <span class="source-name">The Verge</span>
+            <span class="source-desc">Best for tech and modern culture analysis.</span>
+          </a>
+          <a href="https://www.wired.com/" target="_blank" class="source-link">
+            <span class="source-name">Wired</span>
+            <span class="source-desc">Deep investigative reporting on future tech.</span>
+          </a>
+          <a href="https://arstechnica.com" target="_blank" class="source-link">
+            <span class="source-name">Ars Technica</span>
+            <span class="source-desc">In-depth technical analysis for professionals.</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 🇮🇳 INDIA TECH -->
+      <div class="category-section">
+        <div class="category-header">
+          <i class="fas fa-flag"></i>
+          <h2>India National News</h2>
+        </div>
+        <div class="source-list">
+          <a href="https://www.gadgets360.com" target="_blank" class="source-link">
+            <span class="source-name">Gadgets 360</span>
+            <span class="source-desc">India's most visited tech review & news portal.</span>
+          </a>
+          <a href="https://economictimes.indiatimes.com" target="_blank" class="source-link">
+            <span class="source-name">ETTech</span>
+            <span class="source-desc">Leading source for Indian IT & business updates.</span>
+          </a>
+          <a href="https://beebom.com" target="_blank" class="source-link">
+            <span class="source-name">Beebom</span>
+            <span class="source-desc">Focused on consumer gadgets and Indian trends.</span>
+          </a>
+          <a href="https://inc42.com/" target="_blank" class="source-link">
+            <span class="source-name">Inc42</span>
+            <span class="source-desc">Premier destination for Indian startup ecosystem.</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 💻 COMPUTER SCIENCE & AI -->
+      <div class="category-section">
+        <div class="category-header">
+          <i class="fas fa-microchip"></i>
+          <h2>Emerging CS & AI</h2>
+        </div>
+        <div class="source-list">
+          <a href="https://news.mit.edu" target="_blank" class="source-link">
+            <span class="source-name">MIT News (CS)</span>
+            <span class="source-desc">Official groundbreaking research from MIT labs.</span>
+          </a>
+          <a href="https://openai.com" target="_blank" class="source-link">
+            <span class="source-name">OpenAI Blog</span>
+            <span class="source-desc">Latest findings in Large Language Models.</span>
+          </a>
+          <a href="https://www.technologyreview.com" target="_blank" class="source-link">
+            <span class="source-name">MIT Tech Review</span>
+            <span class="source-desc">High academic rigor for cutting-edge science.</span>
+          </a>
+          <a href="https://arxiv.org" target="_blank" class="source-link">
+            <span class="source-name">arXiv (CS)</span>
+            <span class="source-desc">Direct access to the latest research papers.</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Tech Updates Dashboard - Curated for CSGuruTelugu
+    </footer>
+  </div>
+
+</body>
+</html>
