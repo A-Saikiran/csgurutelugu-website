@@ -1,156 +1,195 @@
-// 🎉 FESTIVALS (local object, safe)
+// Telangana Festivals
 const telanganaFestivals = {
-  "01-Jan": "New Year’s Day",
-  "14-Jan": "Bhogi",
-  "15-Jan": "Sankranti / Pongal",
-  "26-Jan": "Republic Day",
-  "15-Feb": "Maha Shivaratri",
-  "03-Mar": "Holi",
-  "19-Mar": "Ugadi",
-  "21-Mar": "Eid-ul-Fitr (Ramzan)",
-  "22-Mar": "Following Day of Ramzan",
-  "27-Mar": "Sri Rama Navami",
-  "03-Apr": "Good Friday",
-  "05-Apr": "Babu Jagjivan Ram’s Birthday",
-  "14-Apr": "Dr. B.R. Ambedkar’s Birthday",
-  "27-May": "Eid-ul-Adha (Bakrid)",
-  "26-Jun": "Shahadat Imam Hussain (10th Moharam)",
-  "10-Aug": "Bonalu",
-  "15-Aug": "Independence Day",
-  "26-Aug": "Eid Milad-un-Nabi",
-  "04-Sep": "Sri Krishna Astami",
-  "14-Sep": "Vinayaka Chavithi",
-  "02-Oct": "Mahatma Gandhi Jayanti",
-  "18-Oct": "Saddula Bathukamma",
-  "20-Oct": "Vijaya Dasami / Dussehra",
-  "21-Oct": "Following Day of Vijaya Dasami",
-  "08-Nov": "Deepavali",
-  "24-Nov": "Kartika Purnima / Guru Nanak Jayanti",
-  "25-Dec": "Christmas Day",
-  "26-Dec": "Following Day of Christmas (Boxing Day)"
+  // January 2026
+  "01-Jan":"New Year's Day; Global Family Day",
+  "04-Jan":"World Braille Day",
+  "09-Jan":"Pravasi Bharatiya Divas (NRI Day)",
+  "10-Jan":"World Hindi Day",
+  "12-Jan":"National Youth Day (Swami Vivekananda's Birthday)",
+  "14-Jan":"Makar Sankranti; Pongal; Bhogi",
+  "15-Jan":"Indian Army Day; Sankranti Kanumu",
+  "23-Jan":"Parakram Diwas (Netaji Subhas Chandra Bose Jayanti)",
+  "24-Jan":"National Girl Child Day; International Day of Education",
+  "25-Jan":"National Voters' Day; National Tourism Day",
+  "26-Jan":"Republic Day of India; International Customs Day",
+  "30-Jan":"Martyrs' Day (Shaheed Diwas); World Leprosy Eradication Day",
+
+  // February 2026
+  "01-Feb":"Indian Coast Guard Day; Guru Ravidas Jayanti",
+  "02-Feb":"World Wetlands Day",
+  "04-Feb":"World Cancer Day",
+  "10-Feb":"National De-worming Day; World Pulses Day",
+  "13-Feb":"World Radio Day; National Women's Day (India)",
+  "15-Feb":"Maha Shivaratri",
+  "20-Feb":"World Day of Social Justice",
+  "21-Feb":"International Mother Language Day",
+  "28-Feb":"National Science Day (India)",
+
+  // March 2026
+  "01-Mar":"Zero Discrimination Day",
+  "03-Mar":"World Wildlife Day; Holi",
+  "08-Mar":"International Women's Day",
+  "15-Mar":"World Consumer Rights Day",
+  "20-Mar":"International Day of Happiness",
+  "21-Mar":"International Day of Forests; Eid-ul-Fitr (Tentative)",
+  "22-Mar":"World Water Day; Bihar Day",
+  "24-Mar":"World Tuberculosis (TB) Day",
+  "26-Mar":"Ram Navami",
+  "31-Mar":"Mahavir Jayanti",
+
+  // April 2026
+  "02-Apr":"World Autism Awareness Day",
+  "05-Apr":"National Maritime Day; Easter Sunday; Good Friday",
+  "07-Apr":"World Health Day",
+  "14-Apr":"Dr. B.R. Ambedkar Jayanti; Baisakhi",
+  "18-Apr":"World Heritage Day",
+  "21-Apr":"National Civil Services Day",
+  "22-Apr":"Earth Day",
+  "24-Apr":"National Panchayati Raj Day",
+  "30-Apr":"Ayushman Bharat Diwas",
+
+  // May 2026
+  "01-May":"International Labour Day; Buddha Purnima",
+  "03-May":"World Press Freedom Day",
+  "08-May":"World Red Cross Day",
+  "11-May":"National Technology Day (India)",
+  "12-May":"International Nurses Day",
+  "21-May":"Anti-Terrorism Day (India)",
+  "22-May":"International Day for Biological Diversity",
+  "27-May":"Eid-ul-Zuha (Bakrid) (Tentative)",
+  "31-May":"World No Tobacco Day",
+
+  // June 2026
+  "03-Jun":"World Bicycle Day",
+  "05-Jun":"World Environment Day",
+  "08-Jun":"World Oceans Day",
+  "12-Jun":"World Day Against Child Labour",
+  "14-Jun":"World Blood Donor Day",
+  "21-Jun":"International Day of Yoga",
+  "26-Jun":"Muharram (Tentative)",
+  "29-Jun":"National Statistics Day (India)",
+
+  // July 2026
+  "01-Jul":"National Doctor's Day (India)",
+  "11-Jul":"World Population Day",
+  "15-Jul":"World Youth Skills Day",
+  "18-Jul":"Nelson Mandela International Day",
+  "26-Jul":"Kargil Vijay Diwas (Memorial Day)",
+  "29-Jul":"International Tiger Day",
+
+  // August 2026
+  "07-Aug":"National Handloom Day",
+  "08-Aug":"Quit India Movement Day",
+  "12-Aug":"International Youth Day",
+  "15-Aug":"Independence Day of India",
+  "26-Aug":"Id-e-Milad (Tentative); Onam",
+  "29-Aug":"National Sports Day (India)",
+
+  // September 2026
+  "05-Sep":"Teachers' Day (India)",
+  "08-Sep":"International Literacy Day",
+  "14-Sep":"Hindi Diwas (India); Vinayaka Chavithi",
+  "16-Sep":"World Ozone Day",
+  "21-Sep":"International Day of Peace",
+  "27-Sep":"World Tourism Day",
+
+  // October 2026
+  "02-Oct":"Gandhi Jayanti; Mahatma Gandhi Jayanti",
+  "08-Oct":"Indian Air Force Day",
+  "16-Oct":"World Food Day",
+  "18-Oct":"Saddula Bathukamma",
+  "20-Oct":"Dussehra (Vijaya Dashami)",
+  "24-Oct":"United Nations (UN) Day",
+  "31-Oct":"National Unity Day (Rashtriya Ekta Diwas)",
+
+  // November 2026
+  "08-Nov":"Diwali (Deepavali)",
+  "11-Nov":"National Education Day (India)",
+  "14-Nov":"Children's Day (India)",
+  "24-Nov":"Guru Nanak Jayanti",
+  "26-Nov":"Constitution Day (Samvidhan Divas)",
+
+  // December 2026
+  "01-Dec":"World AIDS Day",
+  "04-Dec":"Indian Navy Day",
+  "07-Dec":"Armed Forces Flag Day",
+  "10-Dec":"Human Rights Day",
+  "22-Dec":"National Mathematics Day (India)",
+  "23-Dec":"Kisan Diwas (Farmers' Day)",
+  "25-Dec":"Christmas Day",
+
+  // Observances & Fun Days
+  "14-Feb":"Valentine’s Day",
+  "09-May":"Mother’s Day (2nd Sunday of May)",
+  "21-Jun":"Father’s Day (3rd Sunday of June)"
 };
 
-// 🔥 CLOCK + FESTIVAL DISPLAY
-function updateClock() {
-    const now = new Date();
+// CLOCK + FESTIVAL
+function updateClock(){
+  const now = new Date();
+  const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const dayName = days[now.getDay()];
+  const date = String(now.getDate()).padStart(2,'0');
+  const month = months[now.getMonth()];
+  const year = now.getFullYear();
+  const time = now.toLocaleTimeString('en-IN',{hour12:true});
 
-    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    const dayName = days[now.getDay()];
+  const clockEl = document.getElementById("clock-box");
+  const festEl = document.getElementById("festival-msg");
 
-    const d = String(now.getDate()).padStart(2,'0');
+  if(clockEl){
+    clockEl.innerHTML = `<span class="date-part">${dayName}, ${date}-${month}-${year}</span><br>
+                         <span class="time-part">${time}</span>`;
+  }
 
-    const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-    const m = monthNames[now.getMonth()];
-
-    const y = now.getFullYear();
-    const time = now.toLocaleTimeString('en-IN',{hour12:true});
-
-    const clockEl = document.getElementById("clock-box");
-    const festivalEl = document.getElementById("festival-msg");
-
-    // ⏰ Display Date & Time
-    if(clockEl){
-        clockEl.innerHTML = `
-        <span class="date-part">${dayName}, ${d}-${m}-${y}</span><br>
-        <span class="time-part">${time}</span>
-        `;
-    }
-
-    // 🎉 Festival Logic
-    const key = `${d}-${m}`;
-
-    if(festivalEl){
-        const fest = telanganaFestivals[key];
-
-        if(fest){
-            festivalEl.innerText = `🎉 Happy ${fest}! 🎉`;
-
-            // reset classes
-            festivalEl.className = "festival-msg";
-
-            // 🎨 Apply theme
-            if(fest.includes("Deepavali")) {
-                festivalEl.classList.add("diwali");
-            }
-            else if(fest.includes("Sankranti")) {
-                festivalEl.classList.add("sankranti");
-            }
-            else if(fest.includes("Ramzan") || fest.includes("Eid")) {
-                festivalEl.classList.add("ramzan");
-            }
-            else if(fest.includes("Christmas")) {
-                festivalEl.classList.add("christmas");
-            }
-            else if(fest.includes("Ugadi")) {
-                festivalEl.classList.add("ugadi");
-            }
-            else {
-                festivalEl.classList.add("default-fest");
-            }
-
-        } else {
-            festivalEl.innerText = "";
-            festivalEl.className = "festival-msg";
-        }
-    }
+  const key = `${date}-${month}`;
+  if(festEl){
+    const fest = telanganaFestivals[key];
+    festEl.innerText = fest ? `🎉 Happy ${fest}! 🎉` : '';
+  }
 }
-
-// ⏳ Start Clock
-setInterval(updateClock, 1000);
+setInterval(updateClock,1000);
 updateClock();
 
-
-// 🔥 HERO IMAGE SLIDER
+// HERO IMAGE SLIDER
 const heroBg = document.getElementById("hero-bg");
-
 if(heroBg){
-    const images = [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-      "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
-      "https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
-    ];
-
-    const allImages = [...images, ...images];
-
-    heroBg.innerHTML = "";
-
-    allImages.forEach(src => {
-        const div = document.createElement("div");
-        div.style.backgroundImage = `url(${src})`;
-        div.style.minWidth = "100vw";
-        div.style.height = "100%";
-        div.style.backgroundSize = "cover";
-        div.style.backgroundPosition = "center";
-        heroBg.appendChild(div);
-    });
+  const images = [
+    "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
+    "https://images.unsplash.com/photo-1517433456452-f9633a875f6f"
+  ];
+  const allImages = [...images,...images];
+  heroBg.innerHTML = "";
+  allImages.forEach(src=>{
+    const div=document.createElement("div");
+    div.style.backgroundImage=`url(${src})`;
+    div.style.minWidth="100vw";
+    div.style.height="100%";
+    div.style.backgroundSize="cover";
+    div.style.backgroundPosition="center";
+    heroBg.appendChild(div);
+  });
 }
 
-
-// 🔥 CLEAN SUBMENU (NO FLICKER)
-document.querySelectorAll('.has-submenu > a').forEach(item => {
-  item.addEventListener('click', (e) => {
+// SUBMENU CLICK
+document.querySelectorAll('.has-submenu > a').forEach(item=>{
+  item.addEventListener('click', e=>{
     e.preventDefault();
-
     const submenu = item.nextElementSibling;
-
-    // Close others
-    document.querySelectorAll('.submenu').forEach(s => {
-      if (s !== submenu) s.classList.remove('show');
-    });
-
-    // Toggle current
+    document.querySelectorAll('.submenu').forEach(s=>{if(s!==submenu)s.classList.remove('show');});
     submenu.classList.toggle('show');
   });
 });
 
-// Close on outside click
-window.addEventListener('click', (e) => {
-  if (!e.target.closest('.has-submenu')) {
-    document.querySelectorAll('.submenu').forEach(s => s.classList.remove('show'));
+// CLOSE SUBMENU ON OUTSIDE CLICK
+window.addEventListener('click', e=>{
+  if(!e.target.closest('.has-submenu')){
+    document.querySelectorAll('.submenu').forEach(s=>s.classList.remove('show'));
   }
 });
