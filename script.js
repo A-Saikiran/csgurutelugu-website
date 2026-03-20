@@ -162,19 +162,33 @@ updateClock();
 const heroBg = document.getElementById("hero-bg");
 if(heroBg){
   const images = [
-    "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-    "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    "https://images.unsplash.com/photo-1581090700227-1e37b190418e",
-    "https://images.unsplash.com/photo-1517433456452-f9633a875f6f"
+    "https://source.unsplash.com/1920x1080/?artificial-intelligence,technology",
+    "https://source.unsplash.com/1920x1080/?machine-learning,technology",
+    "https://source.unsplash.com/1920x1080/?deep-learning,technology",
+    "https://source.unsplash.com/1920x1080/?blockchain,technology",
+    "https://source.unsplash.com/1920x1080/?cloud-computing,technology",
+    "https://source.unsplash.com/1920x1080/?quantum-computing,technology",
+    "https://source.unsplash.com/1920x1080/?cybersecurity,technology",
+    "https://source.unsplash.com/1920x1080/?internet-of-things,technology",
+    "https://source.unsplash.com/1920x1080/?big-data,technology",
+    "https://source.unsplash.com/1920x1080/?robotics,technology",
+    "https://source.unsplash.com/1920x1080/?virtual-reality,technology",
+    "https://source.unsplash.com/1920x1080/?augmented-reality,technology",
+    "https://source.unsplash.com/1920x1080/?autonomous-vehicles,technology",
+    "https://source.unsplash.com/1920x1080/?computer-vision,technology",
+    "https://source.unsplash.com/1920x1080/?natural-language-processing,technology",
+    "https://source.unsplash.com/1920x1080/?data-science,technology",
+    "https://source.unsplash.com/1920x1080/?neural-networks,technology",
+    "https://source.unsplash.com/1920x1080/?5g,technology",
+    "https://source.unsplash.com/1920x1080/?edge-computing,technology",
+    "https://source.unsplash.com/1920x1080/?software-development,technology"
   ];
 
+  // Repeat images to make sliding seamless
   const allImages = [...images, ...images];
   heroBg.innerHTML = "";
 
-  allImages.forEach(src=>{
+  allImages.forEach(src => {
     const div = document.createElement("div");
     div.style.backgroundImage = `url(${src})`;
     div.style.minWidth = "100vw";
