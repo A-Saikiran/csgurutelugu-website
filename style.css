@@ -256,14 +256,7 @@ header {
     font-size: 18px;
   }
 }
-<div class="hero">
-  <div id="hero-bg" class="hero-bg"></div>
 
-  <div class="hero-content">
-    <h1 class="hero-title">Telugu Tech Learning Platform</h1>
-    <p class="hero-subtitle">తెలుగులో టెక్నాలజీ నేర్చుకోండి</p>
-  </div>
-</div>
 /* ================= BACKGROUND LAYER ================= */
 
 #bg-overlay {
